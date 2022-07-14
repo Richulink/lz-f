@@ -4,6 +4,7 @@ import { FeedComponent } from './components/feed/feed.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { AccesoGuard } from './guards/acceso.guard';
 
 const routes: Routes = [
   {
@@ -13,7 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'inicio',
-    component:InicioComponent
+    component:InicioComponent,
+    
   }
   ,  {
     path: 'login',
@@ -25,7 +27,8 @@ const routes: Routes = [
   },
   {
     path: 'feed',
-    component:FeedComponent
+    component:FeedComponent,
+    canActivate: [AccesoGuard]
   }
 ];
 
