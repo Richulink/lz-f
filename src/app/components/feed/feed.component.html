@@ -1,6 +1,33 @@
 <app-navbar></app-navbar>
 
-<div class="position-relative bottom- 0 " >
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary text-center" href="/feed" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Publicar en noticias
+  </button>
+  
+  <!-- Modal -->
+  
+  <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header ">
+           <input  type="text" placeholder="Nombre de la nota"  class="form-control red-input gray " aria-label="Username">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <textarea  class="form-control red-input gray " placeholder="Escriba la nota" rows="15" id="message-text"></textarea>
+        </div>
+  
+        <button type="button" class="btn btn-secondary btn-lg btn-block p-3 m-2 ">Publicar</button>
+      </div>
+    </div>
+  </div>
+
+<div class="position-relative " >
 <div class="container mt-4 mb-6 ">
     <div class="d-flex justify-content-center row ">
         <div class="col-md-8" >
@@ -97,4 +124,6 @@
 
 
 </div>
+
+
 

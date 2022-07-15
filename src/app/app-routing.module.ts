@@ -28,7 +28,7 @@ const routes: Routes = [
   {
     path: 'feed',
     component:FeedComponent,
-    canActivate: [AccesoGuard]
+   // canActivate: [AccesoGuard]
   }
 ];
 
