@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.fuentes{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+
+.gray {
+    color: rgb(110, 108, 108)
+  }
+
+  .red-input:focus {
+    color: rgb(46, 1, 1);
+
+  }
+
+  .ner{
+
+    top: 130px;
+    
+  }

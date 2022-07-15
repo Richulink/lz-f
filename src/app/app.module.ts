@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { FeedComponent } from './components/feed/feed.component';
+import { FeedRespaldoComponent } from './components/feed-respaldo/feed-respaldo.component';
 
 
 
@@ -28,7 +29,7 @@ const firebaseConfig = {
     LoginComponent,
     InicioComponent, 
     RegistroComponent, 
-    FeedComponent
+    FeedComponent, FeedRespaldoComponent
   ],
   imports: [
     BrowserModule,
