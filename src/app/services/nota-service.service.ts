@@ -14,17 +14,17 @@ export class NotaServiceService {
    }
 
 
- addPlace(nota: Nota) {
+ addNota(nota: Nota) {
   const notaRef = collection(this.fire, 'nota');
   return addDoc(notaRef, nota);
 }
 
-getPlaces(): Observable<Nota[]> {
+getNota(): Observable<Nota[]> {
   const notaRef = collection(this.fire, 'nota');
   return collectionData(notaRef, { idField: 'idNota' }) as Observable<Nota[]>;
 }
 
-deletePlace(nota: Nota) {
+deleteNota(nota: Nota) {
   const notaDocRef = doc(this.fire, `nota/${nota.idNota}`);
   return deleteDoc(notaDocRef);
 }
